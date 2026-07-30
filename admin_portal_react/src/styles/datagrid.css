@@ -1,0 +1,26 @@
+
+
+.MuiDataGrid-root {
+    border: none !important;
+    border-radius: 18px !important;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.MuiDataGrid-columnHeaders {
+    background: #f8fafc;
+    font-weight: 700;
+}
+
+.MuiDataGrid-cell:focus,
+.MuiDataGrid-columnHeader:focus {
+    outline: none !important;
+}
+
+.MuiDataGrid-row:hover {
+    background: #f9fafb;
+}
+
+.MuiDataGrid-footerContainer {
+    border-top: 1px solid #e5e7eb;
+}

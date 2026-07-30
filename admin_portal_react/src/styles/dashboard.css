@@ -1,0 +1,267 @@
+
+
+.dashboard {
+    width: 100%;
+}
+
+.dashboard h1 {
+    margin-bottom: 30px;
+    color: #111827;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.dashboard-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: all .3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 35px rgba(0,0,0,.15);
+}
+
+.dashboard-card h3 {
+    font-size: 15px;
+    color: #6b7280;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.dashboard-card h2 {
+    font-size: 38px;
+    color: #111827;
+    font-weight: bold;
+}
+
+/* =========================
+   Chart Container
+========================= */
+
+.chart-container {
+    background: white;
+    border-radius: 18px;
+    padding: 28px;
+    margin-top: 35px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.chart-container h2 {
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+/* =========================
+   Bottom Section
+========================= */
+
+.bottom-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+/* =========================
+   Recent Users
+========================= */
+
+.recent-users {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.recent-users h2 {
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.recent-users table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recent-users th {
+    background: #f8fafc;
+    color: #374151;
+    font-weight: 600;
+}
+
+.recent-users th,
+.recent-users td {
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.recent-users tr:hover {
+    background: #f9fafb;
+}
+
+/* =========================
+   Notifications Panel
+========================= */
+
+.notifications-panel {
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.notifications-panel h2 {
+    margin-bottom: 18px;
+}
+
+.notifications-panel ul {
+    list-style: none;
+}
+
+.notifications-panel li {
+    padding: 14px 0;
+    border-bottom: 1px solid #ececec;
+    transition: .25s;
+}
+
+.notifications-panel li:hover {
+    color: #2563eb;
+    padding-left: 8px;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width:1200px){
+
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .bottom-section{
+        grid-template-columns:1fr;
+    }
+}
+
+@media (max-width:700px){
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .dashboard h1{
+        font-size:28px;
+    }
+}
+
+/* =========================
+   Modern Stat Cards
+========================= */
+
+.stat-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: all .3s ease;
+    overflow: hidden;
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0,0,0,.15);
+}
+
+.stat-card-icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 28px;
+
+    flex-shrink: 0;
+}
+
+.stat-card-content {
+    flex: 1;
+}
+
+.stat-card-content h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.stat-card-content h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 5px;
+}
+
+.stat-trend {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.stat-trend.positive {
+    color: #16a34a;
+}
+
+.stat-trend.negative {
+    color: #dc2626;
+}
+
+/* ==============================
+   Dashboard Charts Layout
+============================== */
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 30px 0;
+}
+
+.chart-container {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.chart-container h2 {
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+@media (max-width: 900px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+}

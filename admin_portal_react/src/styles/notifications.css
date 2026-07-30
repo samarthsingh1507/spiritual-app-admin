@@ -1,0 +1,158 @@
+
+
+.notifications-page {
+    width: 100%;
+}
+
+.notifications-page h1 {
+    margin-bottom: 25px;
+    color: #1f2937;
+}
+
+
+
+.notifications-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.notifications-header input {
+    width: 350px;
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.notifications-header input:focus {
+    border-color: #2563eb;
+}
+
+.notifications-header button {
+    margin-left: auto;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.notifications-header button:hover {
+    background: #1d4ed8;
+}
+
+/* =========================
+   Modal
+========================= */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+}
+
+.modal {
+    width: 520px;
+    max-width: 95%;
+
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 28px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.18);
+}
+
+.modal h2 {
+    margin-bottom: 20px;
+}
+
+.modal label {
+    display: block;
+
+    margin-top: 16px;
+    margin-bottom: 6px;
+
+    font-weight: 600;
+}
+
+.modal input,
+.modal textarea,
+.modal select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    box-sizing: border-box;
+}
+
+.modal textarea {
+    resize: vertical;
+}
+
+.modal-actions {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.cancel-btn {
+
+    background: #6b7280;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.save-btn {
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background: #1d4ed8;
+}

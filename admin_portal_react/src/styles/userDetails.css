@@ -1,0 +1,100 @@
+.user-details {
+  padding: 35px;
+  background: #f4f7fb;
+  min-height: 100vh;
+}
+
+/* Back Button */
+.user-details .MuiButton-root {
+  margin-bottom: 25px;
+}
+
+
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-info h1 {
+  margin: 0;
+  font-size: 34px;
+  color: #111827;
+}
+
+.profile-info p {
+  margin: 8px 0 18px;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.chips {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   STAT CARDS
+========================= */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,.08);
+  transition: .25s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h4 {
+  margin: 0;
+  color: #2563eb;
+  font-size: 15px;
+}
+
+.stat-card p {
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111827;
+}
+
+/*

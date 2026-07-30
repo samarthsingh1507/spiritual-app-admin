@@ -1,0 +1,48 @@
+/* =========================
+   Status Badge
+========================= */
+
+.status-badge{
+    display:inline-block;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.status-badge.active{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+.status-badge.inactive{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+/* =========================
+   Plan Badge
+========================= */
+
+.plan-badge{
+    display:inline-block;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.plan-badge.basic{
+    background:#dbeafe;
+    color:#1d4ed8;
+}
+
+.plan-badge.gold{
+    background:#fef3c7;
+    color:#b45309;
+}
+
+.plan-badge.premium{
+    background:#ede9fe;
+    color:#7c3aed;
+}
